@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "93307090150",
+    "firebase_url": "https://monagendapartage-ae504.firebaseio.com",
+    "project_id": "monagendapartage-ae504",
+    "storage_bucket": "monagendapartage-ae504.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93307090150:android:222ffac0f0324927c5f727",
+        "android_client_info": {
+          "package_name": "com.example.monagendapartage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93307090150-28b36k11gsmjv8gk78uekdbidqati69n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.monagendapartage",
+            "certificate_hash": "7d4532aec4e7c41b55005d8fd9ce7f5acc99778f"
+          }
+        },
+        {
+          "client_id": "93307090150-7vbv40tcoierejsat157dpso8lrfgqr2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHlf0Y2n_u7zLBnTyYBqLnm5eGmLwjVYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93307090150-7vbv40tcoierejsat157dpso8lrfgqr2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
