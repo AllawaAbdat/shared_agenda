@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/filters_section"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewSentence"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="- Saisissez votre nouveau numéro de téléphone -"
+                android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@id/textViewSentence"
+                android:text="Numéro de Téléphone"
+                android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextChange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textViewChange"
+                android:layout_below="@id/textViewSentence"
+                android:text=""
+                android:hint="0123456789"
+                android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <Spinner
+                android:id="@+id/animalTypeSpinner"
+                android:layout_below="@id/textViewSentence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textViewChange"
+                android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/animalRaceSpinner"
+                android:layout_below="@id/textViewSentence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textViewChange"
+                android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/animalSexeSpinner"
+                android:layout_below="@id/textViewSentence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/textViewChange"
+                android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <TableLayout
+                android:id="@+id/tableLayoutSterilise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewSentence"
+                android:layout_toEndOf="@+id/textViewChange"
+                android:gravity="center_horizontal"
+                android:visibility="gone">
+
+                <TableRow
+                    android:id="@+id/tableRowSterilise"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupeSterilise"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:textColor="#000000">
+
+                        <RadioButton
+                            android:id="@+id/yesRadioButtonSterilise"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Oui"
+                            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/noRadioButtonSterilise"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:text="Non"
+                            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </RadioGroup>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayoutPuce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewSentence"
+                android:layout_toEndOf="@+id/textViewChange"
+                android:gravity="center_horizontal"
+                android:visibility="gone">
+
+                <TableRow
+                    android:id="@+id/tableRowPuce"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupePuce"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:textColor="#000000">
+
+                        <RadioButton
+                            android:id="@+id/yesRadioButtonPuce"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Oui"
+                            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/noRadioButtonPuce"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:text="Non"
+                            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </RadioGroup>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayoutTatouage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewSentence"
+                android:layout_toEndOf="@+id/textViewChange"
+                android:gravity="center_horizontal"
+                android:visibility="gone">
+
+                <TableRow
+                    android:id="@+id/tableRowTatouage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupeTatouage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:textColor="#000000">
+
+                        <RadioButton
+                            android:id="@+id/yesRadioButtonTatouage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Oui"
+                            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/noRadioButtonTatouage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:text="Non"
+                            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </RadioGroup>
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextChange"
+                android:layout_margin="10dp"
+                android:id="@+id/textViewTypeDeVoie"
+                android:text="Type de voie"
+                android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/adressTypeSpinner"
+                android:layout_below="@id/editTextChange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toEndOf="@+id/textViewTypeDeVoie"
+                android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/textViewAddressName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/adressTypeSpinner"
+                android:layout_margin="10dp"
+                android:text="Nom de l'adresse"
+                android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextAddressName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/adressTypeSpinner"
+                android:layout_toEndOf="@id/textViewAddressName"
+                android:hint="des peupliers"
+                android:inputType="text"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

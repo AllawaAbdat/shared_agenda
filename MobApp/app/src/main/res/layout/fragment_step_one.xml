@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragments.PresentationFragment.StepOneFragment"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutStepOneFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:lottie_fileName="calendaranim.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Bienvenue !"
+            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+            android:id="@+id/textViewBienvenu"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Mon Agenda Partagé qu'est que c'est ?"
+            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+            android:id="@+id/textViewCoprs"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Vous souhaitez gérer vos évènements ?"
+            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+            android:id="@+id/textViewCoprs2"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Les partager à vos proches ? (Familles, Amis etc ...)"
+            android:textColor="@color/colorPrimaryTextDefaultMaterialLight"
+            android:id="@+id/textViewCoprs3"
+            android:textSize="14dp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:lottie_fileName="swipeleft.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
